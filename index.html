@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender Equality</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff007f, #ff4d88);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        .section {
+            padding: 50px;
+            background: white;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        h1, h2 {
+            color: #ff007f;
+        }
+
+        p, ol, ul {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        strong {
+            color: #cc0066;
+            font-size: 22px;
+        }
+
+        .responsive-img {
+            width: 70%;
+            max-width: 300px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                width: 95%;
+                padding: 30px;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#targets">SDG 5 Targets</a></li>
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="intro" class="section fade-in">
+        <h1><b>GENDER EQUALITY (SDG 5)</b></h1>
+        <img src="pic.png" alt="Gender Equality" class="responsive-img">
+        <p>Achieving gender equality and empowering all women and girls worldwide.</p>
+    </section>
+    
+    <section id="targets" class="section fade-in">
+        <h2><b>KEY TARGETS OF SDG 5</b></h2>
+        <ol>
+            <li>End All Forms of Discrimination – Ensure equal rights and eliminate gender-based discrimination globally.</li>
+            <li>Eliminate Violence Against Women – End violence, exploitation, and harmful practices such as child marriage and FGM.</li>
+            <li>Recognize and Value Unpaid Care Work – Promote shared domestic responsibilities and support women’s economic empowerment.</li>
+            <li>Ensure Full Participation in Leadership – Promote equal opportunities for women in political and economic decision-making.</li>
+            <li>Universal Access to Sexual and Reproductive Rights – Ensure access to healthcare, family planning, and reproductive health services.</li>
+            <li>Adopt Policies for Gender Equality – Implement legal frameworks to promote equal rights for all genders.</li>
+        </ol>
+    </section>
+    
+    <section id="problem" class="section fade-in">
+        <h2><b>PROBLEM STATEMENT</b></h2>
+        <p>Gender inequality persists in many parts of the world, limiting opportunities for women and girls. Issues like wage gaps, gender-based violence, lack of access to education, and restricted reproductive rights create barriers to equality. 
+            Achieving SDG 5 requires strong policies, education, and global cooperation to empower women and ensure equal opportunities for all.</p>
+    </section>
+    
+    <section id="events" class="section fade-in">
+        <h2><b>UPCOMING EVENTS</b></h2>
+        <p>
+            <strong>Global Gender Equality Forum - March 8, 2025 - Geneva</strong>
+            <br>Discussing innovative solutions to advance women's rights worldwide.
+            <br><strong>Women in Leadership Summit - September 15, 2025 - London</strong>
+            <br>Bringing together female leaders to strategize on achieving equal representation in leadership roles.
+        </p>
+    </section>
+    
+    <section id="solutions" class="section fade-in">
+        <h2><b>SOLUTIONS</b></h2>
+        <p><strong>Equal Pay and Economic Empowerment</strong> - Enforce laws ensuring equal pay and employment rights for women.</p>
+        <br><p><strong>Access to Education</strong> - Provide scholarships and incentives for girls’ education worldwide.</p>
+        <br><p><strong>Ending Gender-Based Violence</strong> - Strengthen laws and support services for victims of gender violence.</p>
+        <br><p><strong>Women's Leadership and Political Representation</strong> - Encourage women’s participation in politics and leadership roles.</p>
+    </section>
+    
+    <section id="contact" class="section fade-in">
+        <h2><b>CONTACT</b></h2>
+        <p><strong>Name:</strong> DIYASHREE SADINENI </p>
+        <p><strong>Email:</strong> diyashree.sadineni2021@vitstudent.ac.in</p>
+    </section>
+    
+    <script>
+        $(document).ready(function(){
+            $(".fade-in").each(function(i) {
+                $(this).delay(i * 300).animate({ opacity: 1 }, 800);
+            });
+        });
+    </script>
+</body>
+</html>
